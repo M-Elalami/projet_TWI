@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QCM ALGORITHMIQUE</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+    <body class="body-contact">
+      <div class="dropdwn">
+        <nav> 
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../services.html">Services</a>
+              <ul>
+                <li><a href="../avant-dut.html">Avant DUT</a>
+                <ul>
+                  <li><a href="../avant-dut.html">Description</a></li>
+                    <li><a href="../Modules.html">Modules</a></li> 
+                  </li>
+                </ul>
+                <li><a href="../pendant-dut.html">Pendant DUT</a>
+                  <ul>
+                    <li><a href="../cours.html">Cours</a></li>
+                    <li><a href="../exercices.html">Exercices</a></li>
+                    <li><a href="../qcm.html">QCM</a></li>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Aprés DUT
+                    
+                  </a>
+                  <ul>
+                    <li><a href="../aprés-dut.html">Description</a></li>
+                  <li><a href="../concours.html">Concours</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>         
+            <li><a href="../contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+        <div id="principal">
+        <p ID="title">QCM ALGORITHMIQUE</p>
+        <p id="question">Veuillez choisir les bonnes reponses</p>
+        <div class="move" id="first">
+            <label class="Q">Qu’est-ce qu’un algorithme?</label><br/>
+            <label></label><input name="1" type="radio">  Un organigramme
+          </label><br/>
+            <label><input name="1" type="radio"> Une décision
+            </label><br/>
+            <label><input name="1" type="radio"> Instructions pas à pas utilisées pour résoudre un problème</label>
+        </div>
+        <div class="move">
+            <label class="Q">Pour répéter une tâche, nous utilisons une</label><br/>
+            <label></label><input name="2" type="radio"> Sortie</label><br/>
+            <label><input name="2" type="radio"> Condition</label><br/>
+            <label><input name="2" type="radio"> Boucle</label>
+        </div>
+        <div class="move">
+            <label class="Q">Si ....... Alors ....... Sinon ....... Fin Si vérifier
+            </label><br/>
+            <label></label><input name="3"type="radio"> Une seul condition</label><br/>
+            <label><input name="3" type="radio"> Deux conditions
+            </label><br/>
+            <label><input name="3" type="radio"> Trois conditions
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q"> Que fait un algorithme de recherche?</label><br/>
+            <label></label><input name="4" type="radio"> Rechercher dans un ensemble de données</label><br/>
+            <label><input name="4" type="radio"> Enregistrer un ensemble de données
+            </label><br/>
+            <label><input name="4" type="radio"> Aide à organiser les données          </label>
+        </div>
+        <div class="move">
+            <label class="Q">Max ← 5 et var ← 2 sont des exemples d’
+            </label><br/>
+            <label></label><input name="5" type="radio"> Affectation de variables
+          </label><br/>
+            <label><input name="5" type="radio"> Opérations arithmétiques
+            </label><br/>
+            <label><input name="5" type="radio"> Sortie
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Un algorithme se construit</label><br/>
+            <label></label><input name="6" type="radio"> après l'écriture d'un programme
+          </label><br/>
+            <label><input name="6" type="radio"> avant l'écriture d'un programme
+            </label><br/>
+            <label><input name="6" type="radio"> l'ordre de construction n'a pas d'importance
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Comment s'appelle l'action qui soustrait un d'une variable ? Une :</label><br/>
+            <label></label><input name="7"type="radio"> incrémentation</label><br/>
+            <label><input name="7" type="radio"> décrémentation</label><br/>
+            <label><input name="7" type="radio"> comparaison</label>
+        </div>
+        <div class="move">
+            <label class="Q">Comment s'appelle une structure qui influence le déroulement de l'algorithme dans le temps ?</label><br/>
+            <label></label><input name="8" type="radio"> binaire
+          </label><br/>
+            <label><input name="8" type="radio"> de tableau
+            </label><br/>
+            <label><input name="8" type="radio"> de contrôle            </label>
+        </div><div class="move">
+            <label class="Q">L'évaluation d'une condition renvoie un résultat du type :
+            </label><br/>
+            <label></label><input name="9"type="radio"> logique
+          </label><br/>
+            <label><input name="9" type="radio"> textuel</label><br/>
+            <label><input name="9" type="radio"> arithmétique
+            </label>
+        </div>
+        <div class="move" id="last">
+            <label class="Q">Sachant qu'un traitement doit être répété 50 fois, quelle est la structure la plus appropriée ?</label><br/>
+            <label></label><input name="10" type="radio"> Répéter/Jusqu'à ce que</label><br/>
+            <label><input name="10" type="radio"> Pour</label><br/>
+            <label><input name="10" type="radio"> Tant que
+            </label><br/>
+            <input type="submit" id="submit0" value="Soumettre" >
+            <button id="verification">Correction</button>
+          </div>
+    </div>
+    <script>{
+      let input = document.getElementsByTagName("input");
+      document.getElementById("submit0").onclick = function(){
+        let note = 0;
+        if (input[2].checked==true){
+            note++;
+        }
+        if (input[5].checked==true){
+            note++;
+        }
+        if (input[7].checked==true){
+            note++;
+        }
+        if (input[9].checked==true){
+            note++;
+        }if (input[12].checked==true){
+            note++;
+        }if (input[16].checked==true){
+            note++;
+        }if (input[19].checked==true){
+            note++;
+        }if (input[23].checked==true){
+            note++;
+        }if (input[24].checked==true){
+            note++;
+        }if (input[28].checked==true){
+            note++;
+        }
+     alert(`vote note est ${note}/10`);
+      }
+      document.getElementById("verification").onclick = function(){
+        input[2].checked=true
+        input[5].checked=true
+        input[7].checked=true
+        input[9].checked=true
+        input[12].checked=true
+        input[16].checked=true
+        input[19].checked=true
+        input[23].checked=true  
+        input[24].checked=true
+        input[28].checked="true"
+        document.getElementById("verification").remove();
+        document.getElementById("submit0").remove();
+      }
+  }
+     </script>
+    <footer id="QCMFO">
+      Copyight &copy; Footer &reg;
+    </footer>
+    </body>
+</html>

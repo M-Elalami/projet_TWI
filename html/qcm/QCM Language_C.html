@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QCM Language C</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+    <body class="body-contact">
+      <div class="dropdwn">
+        <nav> 
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../services.html">Services</a>
+              <ul>
+                <li><a href="../avant-dut.html">Avant DUT</a>
+                <ul>
+                  <li><a href="../avant-dut.html">Description</a></li>
+                    <li><a href="../Modules.html">Modules</a></li> 
+                  </li>
+                </ul>
+                <li><a href="../pendant-dut.html">Pendant DUT</a>
+                  <ul>
+                    <li><a href="../cours.html">Cours</a></li>
+                    <li><a href="../exercices.html">Exercices</a></li>
+                    <li><a href="../qcm.html">QCM</a></li>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Aprés DUT
+                    
+                  </a>
+                  <ul>
+                    <li><a href="../aprés-dut.html">Description</a></li>
+                  <li><a href="../concours.html">Concours</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>         
+            <li><a href="../contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+        <div id="principal">
+        <p ID="title">QCM Language C</p>
+        <p id="question">Veuillez choisir les bonnes reponses</p>
+        <div class="move" id="first">
+            <label class="Q">Lequel des noms suivants n’est pas un nom de variable valide?</label><br/>
+            <label></label><input name="1" type="radio"> int nbr;
+          </label><br/>
+            <label><input name="1" type="radio"> int $main;
+            </label><br/>
+            <label><input name="1" type="radio"> int variable_count;</label>
+        </div>
+        <div class="move">
+            <label class="Q">Les noms de variables commençant par underscore ne sont pas encouragés. Pourquoi?</label><br/>
+            <label></label><input name="2" type="radio"> Il n’est pas normalisé</label><br/>
+            <label><input name="2" type="radio"> Pour éviter les conflits puisque les routines de bibliothèque peuvent utiliser des variables contenant underscore</label><br/>
+            <label><input name="2" type="radio">  Pour éviter les conflits avec les variables d’environnement d’un système d’exploitation</label>
+        </div>
+        <div class="move">
+            <label class="Q">L’identifiant ‘%i’ est également utilisé pour 
+            </label><br/>
+            <label></label><input name="3"type="radio"> int</label><br/>
+            <label><input name="3" type="radio"> float
+            </label><br/>
+            <label><input name="3" type="radio"> double
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q"> Quelle est la taille de type int?</label><br/>
+            <label></label><input name="4" type="radio"> 4 Octets</label><br/>
+            <label><input name="4" type="radio"> 8 Octets
+            </label><br/>
+            <label><input name="4" type="radio"> dépend du système et du compilateur</label>
+        </div>
+        <div class="move">
+            <label class="Q">Que signifier « short int » dans la programmation C
+            </label><br/>
+            <label></label><input name="5" type="radio"> type de données de base
+          </label><br/>
+            <label><input name="5" type="radio"> qualificateur
+            </label><br/>
+            <label><input name="5" type="radio"> short est le qualificateur et int est le type de base
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Tous les mots-clés dans C sont en</label><br/>
+            <label></label><input name="6" type="radio"> lettres CamelCase
+          </label><br/>
+            <label><input name="6" type="radio"> lettres majuscules
+            </label><br/>
+            <label><input name="6" type="radio"> lettres minuscules
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">A quel indice commence un tableau ?</label><br/>
+            <label></label><input name="7"type="radio"> A l'indice -1</label><br/>
+            <label><input name="7" type="radio"> A l'indice 1</label><br/>
+            <label><input name="7" type="radio">  A l'indice 0</label>
+        </div>
+        <div class="move">
+            <label class="Q">Le nom d’une variable utilisée dans une fonction ne peut pas être utilisé dans une autre fonction ?</label><br/>
+            <label></label><input name="8" type="radio"> Vrai
+          </label><br/>
+            <label><input name="8" type="radio"> Faux
+            </label><br/>
+            <label><input name="8" type="radio"> Aucun de ces réponses</label>
+        </div><div class="move">
+            <label class="Q">En C, pour lire une valeur entière dans la variable toto, on peut faire
+            </label><br/>
+            <label></label><input name="9"type="radio"> printf("%u", toto);
+          </label><br/>
+            <label><input name="9" type="radio"> scanf("%u", &toto);</label><br/>
+            <label><input name="9" type="radio"> scanf("%u", toto);
+            </label>
+        </div>
+        <div class="move" id="last">
+            <label class="Q">Comment faire pour revenir à la ligne en ne prenant qu'une ligne dans mon code ? </label><br/>
+            <label></label><input name="10" type="radio"> /n</label><br/>
+            <label><input name="10" type="radio"> \n </label><br/>
+            <label><input name="10" type="radio"> \t 
+            </label><br/>
+            <input type="submit" id="submit0" value="Soumettre" >
+            <button id="verification">Correction</button>
+          </div>
+    </div>
+    <script>{
+      let input = document.getElementsByTagName("input");
+      document.getElementById("submit0").onclick = function(){
+        let note = 0;
+        if (input[1].checked==true){
+            note++;
+        }
+        if (input[4].checked==true){
+            note++;
+        }
+        if (input[6].checked==true){
+            note++;
+        }
+        if (input[11].checked==true){
+            note++;
+        }if (input[14].checked==true){
+            note++;
+        }if (input[17].checked==true){
+            note++;
+        }if (input[20].checked==true){
+            note++;
+        }if (input[22].checked==true){
+            note++;
+        }if (input[25].checked==true){
+            note++;
+        }if (input[28].checked==true){
+            note++;
+        }
+     alert(`vote note est ${note}/10`);
+      }
+      document.getElementById("verification").onclick = function(){
+        input[1].checked=true
+        input[4].checked=true
+        input[6].checked=true
+        input[11].checked=true
+        input[14].checked=true
+        input[17].checked=true
+        input[20].checked=true
+        input[22].checked=true  
+        input[25].checked=true
+        input[28].checked="true"
+        document.getElementById("verification").remove();
+        document.getElementById("submit0").remove();
+      }
+  }
+     </script>
+    <footer id="QCMFO">
+      Copyight &copy; Footer &reg;
+    </footer>
+    </body>
+</html>

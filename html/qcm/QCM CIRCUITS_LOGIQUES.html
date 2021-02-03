@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QCM CIRCUITS LOGIQUES</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+    <body class="body-contact">
+      <div class="dropdwn">
+        <nav> 
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../services.html">Services</a>
+              <ul>
+                <li><a href="../avant-dut.html">Avant DUT</a>
+                <ul>
+                  <li><a href="../avant-dut.html">Description</a></li>
+                    <li><a href="../Modules.html">Modules</a></li> 
+                  </li>
+                </ul>
+                <li><a href="../pendant-dut.html">Pendant DUT</a>
+                  <ul>
+                    <li><a href="../cours.html">Cours</a></li>
+                    <li><a href="../exercices.html">Exercices</a></li>
+                    <li><a href="../qcm.html">QCM</a></li>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Aprés DUT
+                    
+                  </a>
+                  <ul>
+                    <li><a href="../aprés-dut.html">Description</a></li>
+                  <li><a href="../concours.html">Concours</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>         
+            <li><a href="../contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+      <div id="principal">
+        <p ID="title">QCM Circuits Logiques</p>
+        <p id="question">Veuillez choisir les bonnes reponses</p>
+        <div class="move" id="first">
+            <label class="Q">Quelle porte logique a sa sortie à 1 si au moins une de ses entrées est à 0 ?</label><br/>
+            <label></label><input name="2" type="radio"> OU-NON</label><br/>
+            <label><input name="2" type="radio"> OUI</label><br/>
+            <label><input name="2" type="radio"> Aucune de ces propositions</label>
+        </div>
+        <div class="move">
+            <label class="Q">Quelle porte logique ne possède qu'une seule entrée et fournit à sa sortie l'état logique complémentaire de son entrée ?
+            </label><br/>
+            <label></label><input name="3"type="radio"> OUI         </label><br/>
+            <label><input name="3" type="radio"> OU-Exclusif-NON
+            </label><br/>
+            <label><input name="3" type="radio"> NON
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Cochez tous les cas où la sortie d'une porte OU-Exclusif à deux entrées A et B est à 1 :            </label><br/>
+            <label></label><input name="4" type="radio"> A=0 et B=1         </label><br/>
+            <label><input name="4" type="radio"> A=0 et B=0
+            </label><br/>
+            <label><input name="4" type="radio"> A=1 et B=1          </label>
+        </div>
+        <div class="move">
+            <label class="Q">Quelle porte logique a sa sortie à 1 si ses deux entrées sont dans le même état logique ?
+            </label><br/>
+            <label></label><input name="5" type="radio"> OU-Exclusif-NON
+          </label><br/>
+            <label><input name="5" type="radio"> OUI
+            </label><br/>
+            <label><input name="5" type="radio"> OU-NON
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Quelle porte logique a sa sortie à 1 si au moins une de ses entrées est à 1 ?            </label><br/>
+            <label></label><input name="6" type="radio"> NON
+          </label><br/>
+            <label><input name="6" type="radio"> OUI
+            </label><br/>
+            <label><input name="6" type="radio"> OU
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Quelle porte logique a sa sortie à 0 si et seulement si toutes ses entrées sont à 0 ?
+            </label><br/>
+            <label></label><input name="7"type="radio"> NON</label><br/>
+            <label><input name="7" type="radio"> OUI</label><br/>
+            <label><input name="7" type="radio"> OU</label>
+        </div>
+        <div class="move">
+            <label class="Q">Cochez tous les cas où la sortie d'une porte ET-NON à deux entrées A et B est à 0 :            </label><br/>
+            <label></label><input name="8" type="radio"> A=0 et B=1
+          </label><br/>
+            <label><input name="8" type="radio"> A=0 et B=0
+            </label><br/>
+            <label><input name="8" type="radio"> A=1 et B=1</label>
+        </div><div class="move">
+            <label class="Q">Quelle porte logique a sa sortie à 1 si au moins une de ses entrées est à 0 ?
+            </label><br/>
+            <label></label><input name="9"type="radio"> ET-NON
+          </label><br/>
+            <label><input name="9" type="radio"> OU-Exclusif-NON</label><br/>
+            <label><input name="9" type="radio"> OU
+            </label>
+        </div>
+        <div class="move" id="last">
+            <label class="Q">Quelle porte logique a sa sortie qui est toujours égale au complément de son unique entrée ?</label><br/>
+            <label></label><input name="10" type="radio"> ET-NON</label><br/>
+            <label><input name="10" type="radio"> OU</label><br/>
+            <label><input name="10" type="radio"> NON
+            </label><br/>
+            <input type="submit" id="submit0" value="Soumettre" >
+            <button id="verification">Correction</button>
+        </div>
+    </div>
+    <script>{
+      let input = document.getElementsByTagName("input");
+      document.getElementById("submit0").onclick = function(){
+        let note = 0;
+        if (input[1].checked==true){
+            note++;
+        }
+        if (input[5].checked==true){
+            note++;
+        }
+        if (input[8].checked==true){
+            note++;
+        }
+        if (input[9].checked==true){
+            note++;
+        }if (input[12].checked==true){
+            note++;
+        }if (input[17].checked==true){
+            note++;
+        }if (input[20].checked==true){
+            note++;
+        }if (input[23].checked==true){
+            note++;
+        }if (input[24].checked==true){
+            note++;
+        }if (input[29].checked==true){
+            note++;
+        }
+     alert(`vote note est ${note}/10`);
+      }
+      document.getElementById("verification").onclick = function(){
+        input[1].checked=true
+        input[5].checked=true
+        input[8].checked=true
+        input[9].checked=true
+        input[12].checked=true
+        input[17].checked=true
+        input[20].checked=true
+        input[23].checked=true  
+        input[24].checked=true
+        input[29].checked="true"
+        document.getElementById("verification").remove();
+        document.getElementById("submit0").remove();
+      }
+  }
+     </script>
+    <footer>
+      Copyight &copy; Footer &reg;
+    </footer>
+    </body>
+</html>

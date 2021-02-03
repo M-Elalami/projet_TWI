@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+     <head>
+         <title>Contact</title>
+         <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+         
+     </head>
+     <body>
+      <div class="dropdwn">
+        <nav> 
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a>
+              <ul>
+                <li><a href="avant-dut.html">Avant DUT</a>
+                <ul>
+                  <li><a href="avant-dut.html">Description</a></li>
+                    <li><a href="Modules.html">Modules</a></li> 
+                  </li>
+                </ul>
+                <li><a href="pendant-dut.html">Pendant DUT</a>
+                  <ul>
+                    <li><a href="cours.html">Cours</a></li>
+                    <li><a href="exercices.html">Exercices</a></li>
+                    <li><a href="qcm.html">QCM</a></li>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Aprés DUT
+                    
+                  </a>
+                  <ul>
+                    <li><a href="aprés-dut.html">Description</a></li>
+                  <li><a href="concours.html">Concours</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>         
+            <li><a href="contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+         <header class="contactStyle">
+            
+                
+        
+         <div class="login-box"> 
+           
+           <form action="" id="myform" onsubmit="return validate();">
+                <p id="contactText">Contactez Nous</p>
+                <div id="error_message"></div>
+                
+                <input class="input" type="text" placeholder="Nom" id="name">
+                
+                <input class="input" type="text" placeholder="Sujet" id="subject">
+                
+                <input class="input" type="text" placeholder="Telephone" id="phone" />
+                
+                <input class="input" type="email" placeholder="Email" id="email">
+                
+                <textarea placeholder="Message" id="message"></textarea> 
+                <input id="submit1" type="submit" />
+                
+                
+               
+            </form>
+           
+        </div>
+      </header>
+      <script>
+        function validate() {
+          var name = document.getElementById("name").value;
+          var subject = document.getElementById("subject").value;
+          var phone = document.getElementById("phone").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          var error_message = document.getElementById("error_message");
+  
+          error_message.style.padding = "10px";
+  
+          var text;
+  
+          if (name.length < 5) {
+            text = "Veuillez entrer votre nom";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if (subject.length < 10) {
+            text = "Veuillez entrer un sujet correct";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if (isNaN(phone) || phone.length != 10) {
+            text = "Veuillez entrer votre numero de telephone";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if (email.indexOf("@") == -1 || email.length < 6) {
+            text = "Veuillez entrer votre adresse email";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if (message.length <= 20) {
+            text = "Veuillez entrer un message qui contient plus de 20 caracteres";
+            error_message.innerHTML = text;
+            return false;
+          }
+  
+          alert("votre message a été bien envoyé avec succès");
+          return true;
+        }
+      </script>
+      <footer>
+        Copyight &copy; Footer &reg;
+      </footer>
+     </body>
+</html>

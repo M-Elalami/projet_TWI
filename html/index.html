@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="dropdwn">
+      <nav> 
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a>
+            <ul>
+              <li><a href="avant-dut.html">Avant DUT</a>
+              <ul>
+                <li><a href="avant-dut.html">Description</a></li>
+                  <li><a href="Modules.html">Modules</a></li> 
+                </li>
+              </ul>
+              <li><a href="pendant-dut.html">Pendant DUT</a>
+                <ul>
+                  <li><a href="cours.html">Cours</a></li>
+                  <li><a href="exercices.html">Exercices</a></li>
+                  <li><a href="qcm.html">QCM</a></li>   
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  >Aprés DUT
+                  
+                </a>
+                <ul>
+                  <li><a href="aprés-dut.html">Description</a></li>
+                <li><a href="concours.html">Concours</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>         
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </nav>
+    <div class="slider">
+      <div id="modal">
+        <div id="modal_id">
+          <div id="X">&times;</div>
+        <form id="modal_buttons">
+        <button formaction="avant-dut.html" class="page" id="page1">Je veux connaitre la filière DUT</button>
+        <button formaction="pendant-dut.html" class="page">J'ai besoin des Cours/Exercices/QCM</button>
+        <button formaction="aprés-dut.html" class="page">Je veux connaitre le parcours après le DUT</button>
+      </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("X").onclick = function() {
+        document.getElementById("modal").style.display="none"
+      }
+    </script>
+
+    <footer>
+      Copyight &copy; Footer &reg;
+    </footer>
+    <script></script>
+  </body>
+</html>

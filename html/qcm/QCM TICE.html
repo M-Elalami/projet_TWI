@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QCM TICE</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+    <body class="body-contact">
+      <div class="dropdwn">
+        <nav> 
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../services.html">Services</a>
+              <ul>
+                <li><a href="../avant-dut.html">Avant DUT</a>
+                <ul>
+                  <li><a href="../avant-dut.html">Description</a></li>
+                    <li><a href="../Modules.html">Modules</a></li> 
+                  </li>
+                </ul>
+                <li><a href="../pendant-dut.html">Pendant DUT</a>
+                  <ul>
+                    <li><a href="../cours.html">Cours</a></li>
+                    <li><a href="../exercices.html">Exercices</a></li>
+                    <li><a href="../qcm.html">QCM</a></li>   
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Aprés DUT
+                    
+                  </a>
+                  <ul>
+                    <li><a href="../aprés-dut.html">Description</a></li>
+                  <li><a href="../concours.html">Concours</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>         
+            <li><a href="../contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+        <div id="principal">
+        <p ID="title">QCM TICE</p>
+        <p id="question">Veuillez choisir les bonnes reponses</p>
+        <div class="move" id="first">
+            <label class="Q">Lorsque vous mettez certains destinataires en Cc</label><br/>
+            <label></label><input name="1" type="radio"> leur adresse de messagerie ne peut être vue
+          </label><br/>
+            <label><input name="1" type="radio"> Ils seront simplement en copie du message
+            </label><br/>
+            <label><input name="1" type="radio"> ils ne peuvent pas voir le message</label>
+        </div>
+        <div class="move">
+            <label class="Q">Qu'est-ce qu'un Spam ?</label><br/>
+            <label></label><input name="2" type="radio"> un courrier important et très attendu</label><br/>
+            <label><input name="2" type="radio"> un courrier indésirable envoyé généralement à des fins publicitaires</label><br/>
+            <label><input name="2" type="radio"> une contraction musculaire brusque, violente et involontaire</label>
+        </div>
+        <div class="move">
+            <label class="Q">MS-Office est un
+            </label><br/>
+            <label></label><input name="3"type="radio"> Logiciel applicatifs</label><br/>
+            <label><input name="3" type="radio">  Logiciel système
+            </label><br/>
+            <label><input name="3" type="radio"> Système d’exploitation
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q"> Par défaut, sur quelle page l’en-tête ou le pied de page est affiché</label><br/>
+            <label></label><input name="4" type="radio"> en première page</label><br/>
+            <label><input name="4" type="radio">  sur une autre page
+            </label><br/>
+            <label><input name="4" type="radio"> sur chaque page           </label>
+        </div>
+        <div class="move">
+            <label class="Q">Quelle zone dans Excel permet de saisir des valeurs et des formules ?
+            </label><br/>
+            <label></label><input name="5" type="radio"> Barre de titre
+          </label><br/>
+            <label><input name="5" type="radio"> Barre de menus
+            </label><br/>
+            <label><input name="5" type="radio"> Barre de formule
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Un classeur Excel est une collection de</label><br/>
+            <label></label><input name="6" type="radio"> Cahiers
+          </label><br/>
+            <label><input name="6" type="radio"> Graphes
+            </label><br/>
+            <label><input name="6" type="radio">  Feuille de calcul et graphes
+            </label>
+        </div>
+        <div class="move">
+            <label class="Q">Que faites-vous pour démarrer le diaporama sur powerpoint</label><br/>
+            <label></label><input name="7"type="radio"> Cliquez sur Démarrer</label><br/>
+            <label><input name="7" type="radio"> Activer la transition</label><br/>
+            <label><input name="7" type="radio"> Cliquez sur l’icône « Diaporama »</label>
+        </div>
+        <div class="move">
+            <label class="Q">Moodle est un logiciel </label><br/>
+            <label></label><input name="8" type="radio"> CMS
+          </label><br/>
+            <label><input name="8" type="radio"> LMS
+            </label><br/>
+            <label><input name="8" type="radio"> office</label>
+        </div><div class="move">
+            <label class="Q">Wordpress est un logiciel
+            </label><br/>
+            <label></label><input name="9"type="radio"> LMS
+          </label><br/>
+            <label><input name="9" type="radio"> gratuit</label><br/>
+            <label><input name="9" type="radio"> office
+            </label>
+        </div>
+        <div class="move" id="last">
+            <label class="Q">Quelle est la différence entre un menu et un emplacement de menu</label><br/>
+            <label></label><input name="10" type="radio"> Aucune</label><br/>
+            <label><input name="10" type="radio"> L'emplacement est une zone du thème permettant d'accueillir un menu</label><br/>
+            <label><input name="10" type="radio"> Un emplacement permet d'assigner un menu à un widget
+            </label><br/>
+            <input type="submit" id="submit0" value="Soumettre" >
+            <button id="verification">Correction</button>
+          </div>
+    </div>
+    <script>{
+      let input = document.getElementsByTagName("input");
+      document.getElementById("submit0").onclick = function(){
+        let note = 0;
+        if (input[1].checked==true){
+            note++;
+        }
+        if (input[4].checked==true){
+            note++;
+        }
+        if (input[6].checked==true){
+            note++;
+        }
+        if (input[11].checked==true){
+            note++;
+        }if (input[14].checked==true){
+            note++;
+        }if (input[17].checked==true){
+            note++;
+        }if (input[20].checked==true){
+            note++;
+        }if (input[22].checked==true){
+            note++;
+        }if (input[25].checked==true){
+            note++;
+        }if (input[28].checked==true){
+            note++;
+        }
+     alert(`vote note est ${note}/10`);
+      }
+      document.getElementById("verification").onclick = function(){
+        input[1].checked=true
+        input[4].checked=true
+        input[6].checked=true
+        input[11].checked=true
+        input[14].checked=true
+        input[17].checked=true
+        input[20].checked=true
+        input[22].checked=true  
+        input[25].checked=true
+        input[28].checked="true"
+        document.getElementById("verification").remove();
+        document.getElementById("submit0").remove();
+      }
+  }
+     </script>
+    <footer id="QCMFO">
+      Copyight &copy; Footer &reg;
+    </footer>
+    </body>
+</html>
